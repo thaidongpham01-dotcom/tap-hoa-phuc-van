@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- saved from url=(0081)file:///C:/Users/DELL/OneDrive/Desktop/Qu%E1%BA%A3n%20l%C3%BD%20Kho/xuat-anh.html -->
+<html lang="vi"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Xuất ảnh Logo</title>
+    <link href="./icon-512_files/css2" rel="stylesheet">
+    <style>
+        body { background-color: #222; display: flex; flex-direction: column; align-items: center; padding: 50px; font-family: Arial, sans-serif; }
+        h2 { color: white; margin-bottom: 30px; }
+        .preview { display: flex; gap: 50px; align-items: flex-end; margin-bottom: 30px; }
+        
+        /* Khung Logo */
+        .logo-box {
+            background: linear-gradient(135deg, #0f5132 0%, #1e7e45 50%, #146c43 100%);
+            border-radius: 22%; /* Bo góc tỷ lệ chuẩn 512px */
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.4), inset 0 2px 5px rgba(255,255,255,0.2);
+            overflow: hidden;
+        }
+        .logo-box::after { content: ''; position: absolute; inset: 3%; border: 2px solid rgba(255,215,0,0.4); border-radius: 19%; pointer-events: none; }
+        .logo-box::before { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: linear-gradient(to bottom right, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0) 40%); transform: rotate(25deg); pointer-events: none; }
+        
+        /* Bản 512px */
+        .size-512 { width: 512px; height: 512px; }
+        .size-512 .icon-group { margin-bottom: 25px; font-size: 110px; }
+        .size-512 .text-main { font-size: 52px; margin-bottom: 12px; }
+        .size-512 .text-sub { font-size: 22px; padding: 8px 28px; }
+
+        /* Bản 192px */
+        .size-192 { width: 192px; height: 192px; border-radius: 22%; }
+        .size-192 .icon-group { margin-bottom: 8px; font-size: 40px; }
+        .size-192 .text-main { font-size: 20px; margin-bottom: 4px; }
+        .size-192 .text-sub { font-size: 9px; padding: 3px 10px; }
+
+        /* Style chung cho chữ và icon */
+        .icon-group { position: relative; display: flex; justify-content: center; align-items: center; z-index: 2; }
+        .roof-icon { color: #FFD700; filter: drop-shadow(0px 5px 10px rgba(0,0,0,0.3)); }
+        .cart-icon { position: absolute; bottom: -10%; color: #fff; filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.4)); transform: scale(0.75); }
+        
+        .text-main {
+            color: #ffffff; font-family: 'Playfair Display', serif; font-weight: 800; text-align: center;
+            line-height: 1.1; letter-spacing: 1px; text-shadow: 0px 4px 10px rgba(0,0,0,0.5); position: relative; z-index: 2;
+        }
+        .text-sub {
+            color: #0f5132; font-family: 'Montserrat', sans-serif; font-weight: 800;
+            background: linear-gradient(90deg, #FFD700, #FFC107); border-radius: 30px;
+            letter-spacing: 2px; text-transform: uppercase; box-shadow: 0 3px 10px rgba(0,0,0,0.2); position: relative; z-index: 2;
+        }
+
+        /* Nút hướng dẫn */
+        .guide { color: #ccc; font-size: 18px; max-width: 600px; text-align: center; line-height: 1.6; }
+        .guide b { color: #FFD700; }
+    </style>
+</head>
+<body>
+
+    <h2>Ảnh Logo Tạp Hóa Phúc Văn</h2>
+    
+    <div class="preview">
+        <!-- Khung 512x512 -->
+        <div class="logo-box size-512">
+            <div class="icon-group">
+                <div class="roof-icon">⌂</div>
+                <div class="cart-icon">🛒</div>
+            </div>
+            <div class="text-main">Tạp Hóa<br>Phúc Văn</div>
+            <div class="text-sub">Tạp Hóa Nhỏ</div>
+        </div>
+
+        <!-- Khung 192x192 -->
+        <div class="logo-box size-192">
+            <div class="icon-group">
+                <div class="roof-icon">⌂</div>
+                <div class="cart-icon">🛒</div>
+            </div>
+            <div class="text-main">Tạp Hóa<br>Phúc Văn</div>
+            <div class="text-sub">Tạp Hóa Nhỏ</div>
+        </div>
+    </div>
+
+    <div class="guide">
+        <b>Hướng dẫn:</b> Nhấn chuột phải vào ảnh lớn &gt; chọn <b>"Lưu hình ảnh thành..."</b> &gt; Lưu với tên <b>icon-512.png</b>.<br>
+        Làm tương tự với ảnh nhỏ &gt; Lưu với tên <b>icon-192.png</b>.
+    </div>
+
+
+</body></html>
